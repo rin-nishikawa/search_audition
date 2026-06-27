@@ -49,6 +49,17 @@ def build_email(
 
     lines = [
         DIVIDER,
+        "📰 今日のニュース",
+        DIVIDER,
+        "",
+    ]
+
+    for i, item in enumerate(news_items, 1):
+        lines.append(f"{i}. {item.title}")
+        lines.append("")
+
+    lines += [
+        DIVIDER,
         "🎤 オーディション情報",
         DIVIDER,
         "",
@@ -58,14 +69,6 @@ def build_email(
         "",
         _format_org_list("ホリプロ", horipro_items),
         "",
-        DIVIDER,
-        "📰 今日のニュース",
-        DIVIDER,
-        "",
     ]
-
-    for i, item in enumerate(news_items, 1):
-        lines.append(f"{i}. {item.title}")
-        lines.append("")
 
     return subject, "\n".join(lines)
