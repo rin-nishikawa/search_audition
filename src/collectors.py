@@ -35,7 +35,7 @@ def format_news(news_items: list[NewsItem]) -> list[str]:
     try:
         client = _openai_client()
         response = client.responses.parse(
-            model="gpt-5-chat",
+            model="gpt-4o-mini",
             input=[
                 {
                     "role": "system",
@@ -57,10 +57,7 @@ def format_news(news_items: list[NewsItem]) -> list[str]:
 
 
 def _openai_client() -> OpenAI:
-    return OpenAI(
-        api_key=os.environ["AZURE_OPENAI_API_KEY"],
-        base_url=os.environ["AZURE_OPENAI_ENDPOINT"],
-    )
+    return OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 
 # def _gemini_client() -> genai.Client:
@@ -90,7 +87,7 @@ def _fetch_audition_from_html(url: str) -> AuditionInfo | None:
     try:
         client = _openai_client()
         response = client.responses.parse(
-            model="gpt-5",
+            model="gpt-4o-mini",
             input=[
                 {
                     "role": "system",
