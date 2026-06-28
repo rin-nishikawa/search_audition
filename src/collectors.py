@@ -24,6 +24,38 @@ class NewsItem(BaseModel):
     source: str
 
 
+class _NewsSentences(BaseModel):
+    items: list[str]
+
+
+def format_news(news_items: list[NewsItem]) -> list[str]:
+    if not news_items:
+        return []
+    titles = "\n".join(f"{i + 1}. {item.title}" for i, item in enumerate(news_items))
+    try:
+        client = _openai_client()
+        response = client.responses.parse(
+            model="gpt-5-chat",
+            input=[
+                {
+                    "role": "system",
+                    "content": (
+                        "ニュースのタイトルを、「は」「を」「が」「だ」「である」などを補い、"
+                        "自然な読みやすい日本語の1文に書き換えてください。"
+                        "元のリストと同じ順序・同じ件数で返してください。"
+                    ),
+                },
+                {"role": "user", "content": titles},
+            ],
+            text_format=_NewsSentences,
+        )
+        result = response.output_parsed
+        return result.items if result else [item.title for item in news_items]
+    except Exception as e:
+        print(f"[openai] ニュース整形失敗: {e}")
+        return [item.title for item in news_items]
+
+
 def _openai_client() -> OpenAI:
     return OpenAI(
         api_key=os.environ["AZURE_OPENAI_API_KEY"],

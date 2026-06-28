@@ -18,6 +18,7 @@ def main() -> None:
 
     print("ニュースを取得中...")
     news = collectors.fetch_news(today.isoformat())
+    news_sentences = collectors.format_news(news)
 
     print("状態を更新中...")
     current_state = state_mod.load()
@@ -27,7 +28,9 @@ def main() -> None:
 
     horipro_items = state_mod.get_list(current_state, "horipro")
 
-    subject, body = formatter.build_email(current_state, horipro_items, news, today)
+    subject, body = formatter.build_email(
+        current_state, horipro_items, news_sentences, today,
+    )
 
     state_mod.save(current_state)
 

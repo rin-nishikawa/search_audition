@@ -1,7 +1,5 @@
 from datetime import date
 
-from src.collectors import NewsItem
-
 DIVIDER = "━" * 20
 
 
@@ -40,7 +38,7 @@ def _format_org_list(label: str, entries: list[dict]) -> str:
 def build_email(
     state: dict,
     horipro_items: list[dict],
-    news_items: list[NewsItem],
+    news_items: list[str],
     today: date,
 ) -> tuple[str, str]:
     date_str = today.strftime("%Y/%m/%d")
@@ -53,8 +51,8 @@ def build_email(
         "",
     ]
 
-    for i, item in enumerate(news_items, 1):
-        lines.append(f"{i}. {item.title}")
+    for i, sentence in enumerate(news_items, 1):
+        lines.append(f"{i}. {sentence}")
         lines.append("")
 
     lines += [
