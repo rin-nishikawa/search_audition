@@ -25,13 +25,9 @@ def main() -> None:
     state_mod.update(current_state, "toho", toho, today)
     state_mod.update_list(current_state, "horipro", horipro, today)
 
-    visibility = {
-        org: state_mod.should_display(current_state.get(org), today)
-        for org in ("shiki", "toho")
-    }
-    horipro_items = state_mod.display_list(current_state.get("horipro"), today)
+    horipro_items = state_mod.get_list(current_state, "horipro")
 
-    subject, body = formatter.build_email(current_state, visibility, horipro_items, news, today)
+    subject, body = formatter.build_email(current_state, horipro_items, news, today)
 
     state_mod.save(current_state)
 
