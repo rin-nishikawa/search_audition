@@ -1,52 +1,5 @@
 {
-  "shiki": {
-    "title": "2026年 オーディション開催決定（劇団四季）",
-    "public_date": "NA",
-    "conditions": "応募受付：2026-05-25 10:00〜2026-06-13 23:59（オンラインのみ）。募集コース：ヴォーカルクラシック／ヴォーカルポピュラー／ジャズダンス／クラシックバレエ／演技。応募資格：性別・国籍・経験不問、2027年4月1日時点で18歳以上（研究生は18〜25歳、在留要件あり）。クラシックバレエ（女性）はトゥシューズ必須。選考：書類→予選8/27–8/29→本選9/4–9/5→面接9/6–9/9→インターン9月下旬〜10月末（1週間程度予定）。会場：四季芸術センター（横浜）。受験料なし。",
-    "deadline": "2026-06-13",
-    "url": "https://www.shiki.jp/group/audition/",
-    "first_seen": "2026-06-28"
-  },
-  "toho": {
-    "title": "レ・ミゼラブル 2027～28年 全国公演オールキャスト・オーディション",
-    "public_date": "NA",
-    "conditions": "歌唱に秀でた男女 （子役を除く）。2027年8月～翌28年4月頃までの稽古および公演（全国巡演）に参加可能であること。自由曲の譜面または伴奏音源が必要。YouTubeに限定公開の歌唱映像アップロード必須。",
-    "deadline": "2026-03-15",
-    "url": "https://www.tohostage.com/lesmiserables/audition2027",
-    "first_seen": "2026-06-28"
-  },
-  "horipro": [
-    {
-      "title": "第48回ホリプロタレントスカウトキャラバン – THE ACTOR",
-      "public_date": "NA",
-      "conditions": "中学1年生～20歳の男女",
-      "deadline": "2026-08-02",
-      "url": "https://www.horipro.co.jp/audition/",
-      "first_seen": "2026-06-28"
-    },
-    {
-      "title": "第47回ホリプロタレントスカウトキャラバン「Horipro Vocal Scout Caravan」",
-      "public_date": "NA",
-      "conditions": "不明",
-      "deadline": null,
-      "url": "https://www.horipro.co.jp/audition/",
-      "first_seen": "2026-06-28"
-    },
-    {
-      "title": "ホリプロ バラエティ タレント オーディション",
-      "public_date": "NA",
-      "conditions": "不明",
-      "deadline": null,
-      "url": "https://www.horipro.co.jp/audition/",
-      "first_seen": "2026-06-27"
-    },
-    {
-      "title": "HORIPRO MEN’S STAR AUDITION （ホリプロメンズスターオーディション）～未来のスターはキミ？ それとも隣のカレ？～",
-      "public_date": "NA",
-      "conditions": "不明",
-      "deadline": null,
-      "url": "https://www.horipro.co.jp/audition/",
-      "first_seen": "2026-06-28"
-    }
-  ]
+  "shiki": null,
+  "toho": null,
+  "horipro": []
 }
