@@ -1,5 +1,27 @@
 {
   "shiki": null,
   "toho": null,
-  "horipro": []
+  "horipro": [
+    {
+      "title": "第48回ホリプロタレントスカウトキャラバン – THE ACTOR",
+      "public_date": "NA",
+      "conditions": "中学1年生～20歳の男女",
+      "deadline": "2026-08-02",
+      "url": "https://www.horipro.co.jp/audition/"
+    },
+    {
+      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
+      "public_date": "NA",
+      "conditions": "不明",
+      "deadline": null,
+      "url": "https://www.horipro.co.jp/audition/"
+    },
+    {
+      "title": "ホリプロ バラエティ タレント オーディション",
+      "public_date": "NA",
+      "conditions": "不明",
+      "deadline": null,
+      "url": "https://www.horipro.co.jp/audition/"
+    }
+  ]
 }
