@@ -22,7 +22,7 @@ def should_display(entry: dict | None, today: date) -> bool:
     if entry is None:
         return False
     first_seen = date.fromisoformat(entry["first_seen"])
-    if (today - first_seen).days > 7:
+    if (today - first_seen).days > 3:
         return False
     deadline = entry.get("deadline")
     if deadline and date.fromisoformat(deadline) < today:
