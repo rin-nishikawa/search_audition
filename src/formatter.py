@@ -3,9 +3,19 @@ from datetime import date
 DIVIDER = "━" * 20
 
 
-def _format_org(label: str, entry: dict | None) -> str:
+def _is_active(entry: dict, today: date) -> bool:
+    dl = entry.get("deadline")
+    if not dl:
+        return False
+    try:
+        return date.fromisoformat(dl) >= today
+    except ValueError:
+        return False
+
+
+def _format_org(label: str, entry: dict | None, today: date) -> str:
     lines = [f"【{label}】"]
-    if entry and entry.get("deadline"):
+    if entry and _is_active(entry, today):
         lines.append(f"概要：{entry['title']}")
         lines.append(f"公演日：{entry['public_date']}")
         lines.append(f"応募条件：{entry['conditions']}")
@@ -16,12 +26,12 @@ def _format_org(label: str, entry: dict | None) -> str:
     return "\n".join(lines)
 
 
-def _format_org_list(label: str, entries: list[dict]) -> str:
+def _format_org_list(label: str, entries: list[dict], today: date) -> str:
     lines = [f"【{label}】"]
     if not entries:
         lines.append("新着情報なし")
         return "\n".join(lines)
-    visible = [e for e in entries if e.get("deadline")]
+    visible = [e for e in entries if _is_active(e, today)]
     if not visible:
         lines.append("新着情報なし")
         return "\n".join(lines)
@@ -60,11 +70,11 @@ def build_email(
         "🎤 オーディション情報",
         DIVIDER,
         "",
-        _format_org("劇団四季", state.get("shiki")),
+        _format_org("劇団四季", state.get("shiki"), today),
         "",
-        _format_org("東宝", state.get("toho")),
+        _format_org("東宝", state.get("toho"), today),
         "",
-        _format_org_list("ホリプロ", horipro_items),
+        _format_org_list("ホリプロ", horipro_items, today),
         "",
     ]
 

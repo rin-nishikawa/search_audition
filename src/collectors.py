@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 
 import requests
 from openai import OpenAI
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 from tavily import TavilyClient
 
 # from google import genai
@@ -17,6 +17,11 @@ class AuditionInfo(BaseModel):
     conditions: str
     deadline: str | None  # "YYYY-MM-DD" または None
     url: str
+
+    @field_validator("deadline", mode="before")
+    @classmethod
+    def normalize_deadline(cls, v):
+        return None if v == "null" else v
 
 
 class NewsItem(BaseModel):
@@ -159,7 +164,7 @@ def fetch_horipro() -> list[AuditionInfo]:
 def fetch_toho() -> AuditionInfo | None:
     try:
         tavily = _tavily_client()
-        results = tavily.search(query="東宝ステージ オーディション 2026", max_results=3)
+        results = tavily.search(query="東宝 ミュージカル オーディション", max_results=3, include_domains=["www.tohostage.com"])
         items = results.get("results", [])
         if not items:
             return None

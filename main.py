@@ -22,9 +22,9 @@ def main() -> None:
 
     print("状態を更新中...")
     current_state = state_mod.load()
-    state_mod.update(current_state, "shiki", shiki, today)
-    state_mod.update(current_state, "toho", toho, today)
-    state_mod.update_list(current_state, "horipro", horipro, today)
+    state_mod.update(current_state, "shiki", shiki)
+    state_mod.update(current_state, "toho", toho)
+    state_mod.update_list(current_state, "horipro", horipro)
 
     horipro_items = state_mod.get_list(current_state, "horipro")
 

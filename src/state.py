@@ -1,5 +1,4 @@
 import json
-from datetime import date
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -20,12 +19,10 @@ def save(state: dict) -> None:
     STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def update_list(state: dict, org: str, fetched: list[AuditionInfo], today: date) -> None:
+def update_list(state: dict, org: str, fetched: list[AuditionInfo]) -> None:
     current: list[dict] = []
 
     for f in fetched:
-        if f.deadline and date.fromisoformat(f.deadline) < today:
-            continue
         current.append({
             "title": f.title,
             "public_date": f.public_date,
@@ -42,18 +39,8 @@ def get_list(state: dict, org: str) -> list[dict]:
     return entries if isinstance(entries, list) else []
 
 
-def update(state: dict, org: str, fetched: AuditionInfo | None, today: date) -> None:
-    current = state.get(org)
-
-    # 期限切れリセット
-    if current and current.get("deadline"):
-        if date.fromisoformat(current["deadline"]) < today:
-            state[org] = None
-
+def update(state: dict, org: str, fetched: AuditionInfo | None) -> None:
     if fetched is None:
-        return
-
-    if fetched.deadline and date.fromisoformat(fetched.deadline) < today:
         return
 
     state[org] = {
