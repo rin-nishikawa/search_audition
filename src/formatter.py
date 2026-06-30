@@ -46,7 +46,7 @@ def _format_org_list(label: str, entries: list[dict], today: date) -> str:
 
 
 def build_email(
-    state: dict,
+    state: dict | None,
     horipro_items: list[dict],
     news_items: list[str],
     today: date,
@@ -65,17 +65,18 @@ def build_email(
         lines.append(f"{i}. {sentence}")
         lines.append("")
 
-    lines += [
-        DIVIDER,
-        "🎤 オーディション情報",
-        DIVIDER,
-        "",
-        _format_org("劇団四季", state.get("shiki"), today),
-        "",
-        _format_org("東宝", state.get("toho"), today),
-        "",
-        _format_org_list("ホリプロ", horipro_items, today),
-        "",
-    ]
+    if state is not None:
+        lines += [
+            DIVIDER,
+            "🎤 オーディション情報",
+            DIVIDER,
+            "",
+            _format_org("劇団四季", state.get("shiki"), today),
+            "",
+            _format_org("東宝", state.get("toho"), today),
+            "",
+            _format_org_list("ホリプロ", horipro_items, today),
+            "",
+        ]
 
     return subject, "\n".join(lines)
