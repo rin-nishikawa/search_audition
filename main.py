@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import datetime, timezone, timedelta
 
 from dotenv import load_dotenv
 
@@ -9,7 +9,8 @@ from src import state as state_mod
 
 
 def main() -> None:
-    today = date.today()
+    JST = timezone(timedelta(hours=9))
+    today = datetime.now(JST).date()
     is_audition_day = today.day % 5 == 0
 
     print("ニュースを取得中...")
