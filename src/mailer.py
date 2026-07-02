@@ -10,7 +10,7 @@ def send(subject: str, body: str) -> None:
 
     msg = MIMEText(body, "plain", "utf-8")
     msg["Subject"] = subject
-    msg["From"] = gmail_user
+    msg["From"] = f"ニュースbot"
     msg["To"] = recipient
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
