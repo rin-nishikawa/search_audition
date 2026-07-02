@@ -17,6 +17,9 @@ def main() -> None:
     news = collectors.fetch_news(today.isoformat())
     news_sentences = collectors.format_news(news)
 
+    print("Zenn記事を取得中...")
+    zenn_articles = collectors.fetch_zenn_articles()
+
     audition_state = None
     horipro_items: list = []
 
@@ -41,6 +44,8 @@ def main() -> None:
 
     subject, body = formatter.build_email(
         audition_state, horipro_items, news_sentences, today,
+        zenn_articles=zenn_articles,
+        news_urls=[n.url for n in news],
     )
 
     print("メールを送信中...")

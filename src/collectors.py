@@ -1,6 +1,7 @@
 import os
 import re
 import xml.etree.ElementTree as ET
+from dataclasses import dataclass
 
 import requests
 from openai import OpenAI
@@ -27,6 +28,7 @@ class AuditionInfo(BaseModel):
 class NewsItem(BaseModel):
     title: str
     source: str
+    url: str = ""
 
 
 class _NewsSentences(BaseModel):
@@ -201,6 +203,45 @@ def fetch_toho() -> AuditionInfo | None:
         return None
 
 
+@dataclass
+class ZennArticle:
+    title: str
+    liked_count: int
+    url: str
+    body_updated_at: str
+
+
+def fetch_zenn_articles() -> list[ZennArticle]:
+    try:
+        resp = requests.get(
+            "https://zenn.dev/api/articles?order=latest",
+            timeout=15,
+            headers={"User-Agent": "Mozilla/5.0"},
+        )
+        resp.raise_for_status()
+        articles = resp.json().get("articles", [])
+    except Exception as e:
+        print(f"[zenn] 記事取得失敗: {e}")
+        return []
+
+    top5 = sorted(articles, key=lambda a: a.get("liked_count", 0), reverse=True)[:5]
+    result = []
+    for a in top5:
+        slug = a.get("slug", "")
+        username = a.get("user", {}).get("username", "")
+        url = f"https://zenn.dev/{username}/articles/{slug}" if username and slug else ""
+        updated = a.get("body_updated_at", "")
+        if updated:
+            updated = updated[:10]  # YYYY-MM-DD のみ
+        result.append(ZennArticle(
+            title=a.get("title", ""),
+            liked_count=a.get("liked_count", 0),
+            url=url,
+            body_updated_at=updated,
+        ))
+    return result
+
+
 def fetch_news(_today: str = "") -> list[NewsItem]:
     try:
         resp = requests.get(
@@ -212,7 +253,11 @@ def fetch_news(_today: str = "") -> list[NewsItem]:
         root = ET.fromstring(resp.content)
         items = root.findall("./channel/item")[:5]
         return [
-            NewsItem(title=item.findtext("title") or "", source="")
+            NewsItem(
+                title=item.findtext("title") or "",
+                source="",
+                url=item.findtext("link") or "",
+            )
             for item in items
             if item.findtext("title")
         ]

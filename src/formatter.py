@@ -45,11 +45,26 @@ def _format_org_list(label: str, entries: list[dict], today: date) -> str:
     return "\n".join(lines).rstrip()
 
 
+def _format_zenn(articles: list) -> str:
+    lines = [f"【Zenn 注目記事 Top5】"]
+    if not articles:
+        lines.append("記事を取得できませんでした")
+        return "\n".join(lines)
+    for i, a in enumerate(articles, 1):
+        lines.append(f"{i}. {a.title}")
+        lines.append(f"   ❤️  いいね：{a.liked_count}　最終更新：{a.body_updated_at}")
+        lines.append(f"   URL：{a.url}")
+        lines.append("")
+    return "\n".join(lines).rstrip()
+
+
 def build_email(
     state: dict | None,
     horipro_items: list[dict],
     news_items: list[str],
     today: date,
+    zenn_articles: list | None = None,
+    news_urls: list[str] | None = None,
 ) -> tuple[str, str]:
     date_str = today.strftime("%Y/%m/%d")
     subject = f"🎭 今日の報告 {date_str}"
@@ -61,9 +76,21 @@ def build_email(
         "",
     ]
 
+    urls = news_urls or []
     for i, sentence in enumerate(news_items, 1):
         lines.append(f"{i}. {sentence}")
+        if i <= len(urls) and urls[i - 1]:
+            lines.append(f"   URL：{urls[i - 1]}")
         lines.append("")
+
+    lines += [
+        DIVIDER,
+        "📝 Zenn 最新記事（いいね数Top5）",
+        DIVIDER,
+        "",
+        _format_zenn(zenn_articles or []),
+        "",
+    ]
 
     if state is not None:
         lines += [
