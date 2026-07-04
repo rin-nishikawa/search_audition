@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "Sixth Generation Audition",
+    "title": "シアターガイドオーディション",
     "public_date": "NA",
-    "conditions": "The audition is looking for various talents and is seeking performers for the stage. Details about the specific roles and requirements can be found on their website. There is a focus on performance abilities and experience.",
+    "conditions": "多彩な表現力を求む。",
     "deadline": "2026-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "ミュージカル『ミス・サイゴン』オールキャストオーディション",
+    "title": "Les Miserables 2024-25 全国公演 オールキャスト・オーディション",
     "public_date": "NA",
-    "conditions": "歌唱・ダンス・芝居に秀でた男女。ただし、子役を除く（子役オーディションは別途実施）。",
-    "deadline": "2024-06-06",
-    "url": "https://www.tohostage.com/miss_saigon/audition2026-27"
+    "conditions": "歌唱に秀でた男女。ただし、子役を除く（子役オーディションは別途実施）。",
+    "deadline": "2023-02-10",
+    "url": "https://www.tohostage.com/lesmiserables/audition2024-25"
   },
   "horipro": [
     {
@@ -24,14 +24,14 @@
     {
       "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
       "public_date": "NA",
-      "conditions": "詳細未記載",
+      "conditions": "不明",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "第44回ホリプロタレントスカウトキャラバン ～未来のキング＆クイーンを探せ！～",
+      "title": "舞台『ハリー・ポッターと呪いの子』主要キャスト オーディション",
       "public_date": "NA",
-      "conditions": "詳細未記載",
+      "conditions": "不明",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
