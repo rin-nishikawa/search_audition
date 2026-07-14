@@ -1,15 +1,15 @@
 {
   "shiki": {
-    "title": "劇団四季 オーディション情報",
-    "public_date": "2026",
-    "conditions": "2026年に新たにオーディションを行う。",
+    "title": "劇団四季　2027年新卒オーディション",
+    "public_date": "NA",
+    "conditions": "集団オーディションの参加資格は、国籍にかかわらず、2027年4月1日以降に歌・ダンスができる学生。 男女ともに年齢制限なし。",
     "deadline": "2023-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "2027～28年 全国公演オールキャスト・オーディション",
+    "title": "Les Miserables 2027～28年 全国公演オールキャスト・オーディション",
     "public_date": "NA",
-    "conditions": "歌唱に秀でた男女。子役を除く。",
+    "conditions": "歌唱に秀でた男女。子役を除く（子役オーディションは別途実施）。",
     "deadline": "2026-03-15",
     "url": "https://www.tohostage.com/lesmiserables/audition2027"
   },
@@ -24,14 +24,14 @@
     {
       "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
       "public_date": "NA",
-      "conditions": "不明",
+      "conditions": "詳細は公式サイトで確認",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "J.K. Rowling's 舞台『ハリー・ポッターと呪いの子』主要キャストオーディション",
+      "title": "舞台『ハリー・ポッターと呪いの子』主要キャスト オーディション",
       "public_date": "NA",
-      "conditions": "不明",
+      "conditions": "詳細は公式サイトで確認",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
