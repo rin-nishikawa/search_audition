@@ -1,35 +1,35 @@
 {
   "shiki": {
-    "title": "ãªã¼ãã£ã·ã§ã³è­ºè¡æ¼ã®è§£æϊ­",
+    "title": "劇団四季オーディション",
     "public_date": "NA",
-    "conditions": "èå°ã«çããåã³ãããå­£ãã¯ããã¾ãã",
+    "conditions": "特定の能力や経験を求める。",
     "deadline": "2026-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "Les Miserables",
+    "title": "Les Miserables オールキャスト・オーディション",
     "public_date": "NA",
-    "conditions": "歌唱に秀でた男女。ただし、子役を除く。",
-    "deadline": "2023-02-10",
-    "url": "https://www.tohostage.com/lesmiserables/audition2024-25"
+    "conditions": "歌唱に秀でた男女（子役を除く）。必要書類・写真・歌唱映像が必要。",
+    "deadline": "2026-03-31",
+    "url": "https://www.tohostage.com/lesmiserables/audition2027"
   },
   "horipro": [
     {
-      "title": "第48回ホリプロタレントスカウトキャラバン - THE ACTOR",
+      "title": "第48回ホリプロタレントスカウトキャラバン – THE ACTOR",
       "public_date": "NA",
       "conditions": "中学1年生～20歳の男女",
       "deadline": "2026-08-02",
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "第47回ホリプロタレントスカウトキャラバン「Horipro Vocal Scout Caravan」",
+      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
       "public_date": "NA",
       "conditions": "詳細不明",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "舞台『ハリー・ポッターと呪いの子』主要キャストオーディション",
+      "title": "ミュージカル『スクール・オブ・ロック』生徒役キャスト",
       "public_date": "NA",
       "conditions": "詳細不明",
       "deadline": null,
