@@ -13,6 +13,9 @@ def main() -> None:
     today = datetime.now(JST).date()
     is_audition_day = today.day % 5 == 0
 
+    print("天気予報を取得中...")
+    rain_forecast = collectors.fetch_rain_forecast(today)
+
     print("ニュースを取得中...")
     news = collectors.fetch_news(today.isoformat())
     news_sentences = collectors.format_news(news)
@@ -46,6 +49,7 @@ def main() -> None:
         audition_state, horipro_items, news_sentences, today,
         zenn_articles=zenn_articles,
         news_urls=[n.url for n in news],
+        rain_forecast=rain_forecast,
     )
 
     print("メールを送信中...")

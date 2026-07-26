@@ -2,6 +2,7 @@ import os
 import re
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
+from datetime import date, datetime, timedelta, timezone
 
 import requests
 from openai import OpenAI
@@ -264,3 +265,54 @@ def fetch_news(_today: str = "") -> list[NewsItem]:
     except Exception as e:
         print(f"[rss] ニュース取得失敗: {e}")
         return []
+
+
+JST = timezone(timedelta(hours=9))
+TOKYO_LAT = 35.6762
+TOKYO_LON = 139.6503
+RAIN_POP_THRESHOLD = 0.3
+
+
+@dataclass
+class RainForecast:
+    morning_rain: bool
+    afternoon_rain: bool
+
+
+def fetch_rain_forecast(today: date) -> RainForecast | None:
+    try:
+        resp = requests.get(
+            "https://api.openweathermap.org/data/2.5/forecast",
+            params={
+                "lat": TOKYO_LAT,
+                "lon": TOKYO_LON,
+                "appid": os.environ["OPENWEATHER_API_KEY"],
+                "units": "metric",
+            },
+            timeout=15,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"[openweather] 天気予報取得失敗: {e}")
+        return None
+
+    try:
+        morning_pops: list[float] = []
+        afternoon_pops: list[float] = []
+        for entry in data.get("list", []):
+            dt_jst = datetime.fromtimestamp(entry["dt"], tz=timezone.utc).astimezone(JST)
+            if dt_jst.date() != today:
+                continue
+            pop = entry.get("pop", 0.0)
+            if 6 <= dt_jst.hour <= 11:
+                morning_pops.append(pop)
+            elif 12 <= dt_jst.hour <= 23:
+                afternoon_pops.append(pop)
+
+        morning_rain = bool(morning_pops) and max(morning_pops) >= RAIN_POP_THRESHOLD
+        afternoon_rain = bool(afternoon_pops) and max(afternoon_pops) >= RAIN_POP_THRESHOLD
+        return RainForecast(morning_rain=morning_rain, afternoon_rain=afternoon_rain)
+    except Exception as e:
+        print(f"[openweather] 天気予報の解析失敗: {e}")
+        return None

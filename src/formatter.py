@@ -58,6 +58,21 @@ def _format_zenn(articles: list) -> str:
     return "\n".join(lines).rstrip()
 
 
+def _format_rain(forecast) -> str | None:
+    """傘が不要な場合は None を返し、呼び出し側でセクション自体を出力しない"""
+    if forecast is None:
+        return "【傘情報】\n天気情報を取得できませんでした"
+    if forecast.morning_rain and forecast.afternoon_rain:
+        message = "一日中雨が降る可能性があるので傘を持って行ってください"
+    elif forecast.morning_rain:
+        message = "午前雨が降る可能性があるので傘を持って行ってください"
+    elif forecast.afternoon_rain:
+        message = "午後雨が降る可能性があるので傘を持って行ってください"
+    else:
+        return None
+    return f"【傘情報】\n{message}"
+
+
 def build_email(
     state: dict | None,
     horipro_items: list[dict],
@@ -65,11 +80,24 @@ def build_email(
     today: date,
     zenn_articles: list | None = None,
     news_urls: list[str] | None = None,
+    rain_forecast=None,
 ) -> tuple[str, str]:
     date_str = today.strftime("%Y/%m/%d")
     subject = f"🎭 今日の報告 {date_str}"
 
-    lines = [
+    lines = []
+    rain_section = _format_rain(rain_forecast)
+    if rain_section is not None:
+        lines += [
+            DIVIDER,
+            "☂️ 傘情報",
+            DIVIDER,
+            "",
+            rain_section,
+            "",
+        ]
+
+    lines += [
         DIVIDER,
         "📰 今日のニュース",
         DIVIDER,
