@@ -63,11 +63,11 @@ def _format_rain(forecast) -> str | None:
     if forecast is None:
         return "【傘情報】\n天気情報を取得できませんでした"
     if forecast.morning_rain and forecast.afternoon_rain:
-        message = "一日中雨が降る可能性があるので傘を持って行ってください"
+        message = "一日中雨が降る可能性があるので傘とブーツを持って行ってください"
     elif forecast.morning_rain:
-        message = "午前雨が降る可能性があるので傘を持って行ってください"
+        message = "午前雨が降る可能性があるので傘とブーツを持って行ってください"
     elif forecast.afternoon_rain:
-        message = "午後雨が降る可能性があるので傘を持って行ってください"
+        message = "午後雨が降る可能性があるので傘とブーツを持って行ってください"
     else:
         return None
     return f"【傘情報】\n{message}"
