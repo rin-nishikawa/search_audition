@@ -1,21 +1,21 @@
 {
   "shiki": {
-    "title": "劇団四季オーディション",
+    "title": "四季劇団4期生オーディション",
     "public_date": "NA",
-    "conditions": "特定の能力や経験を求める。",
-    "deadline": "2026-06-13",
+    "conditions": "2026年より始まるオーディションに関する説明会",
+    "deadline": "2023-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "Les Miserables オールキャスト・オーディション",
+    "title": "Les Miserables",
     "public_date": "NA",
-    "conditions": "歌唱に秀でた男女（子役を除く）。必要書類・写真・歌唱映像が必要。",
-    "deadline": "2026-03-31",
-    "url": "https://www.tohostage.com/lesmiserables/audition2027"
+    "conditions": "歌唱に秀でた男女。ただし、子役を除く（子役オーディションは別途実施）",
+    "deadline": "2023-02-10",
+    "url": "https://www.tohostage.com/lesmiserables/audition2024-25"
   },
   "horipro": [
     {
-      "title": "第48回ホリプロタレントスカウトキャラバン – THE ACTOR",
+      "title": "第48回ホリプロタレントスカウトキャラバン - THE ACTOR",
       "public_date": "NA",
       "conditions": "中学1年生～20歳の男女",
       "deadline": "2026-08-02",
@@ -24,14 +24,14 @@
     {
       "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
       "public_date": "NA",
-      "conditions": "詳細不明",
+      "conditions": "詳細は公式サイトを参照",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "ミュージカル『スクール・オブ・ロック』生徒役キャスト",
+      "title": "ホリプロ バラエティ タレント オーディション",
       "public_date": "NA",
-      "conditions": "詳細不明",
+      "conditions": "詳細は公式サイトを参照",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
