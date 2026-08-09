@@ -1,37 +1,37 @@
 {
   "shiki": {
-    "title": "シアタークリエオーディション",
+    "title": "オーディション情報",
     "public_date": "NA",
-    "conditions": "詳細は公式サイトをご覧ください。",
-    "deadline": "2023-06-13",
+    "conditions": "未定",
+    "deadline": "2026-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "ミュージカル「レ・ミゼラブル」オーディション",
+    "title": "レ・ミゼラブル 子役オーディション",
     "public_date": "NA",
-    "conditions": "歌唱に秀でた男女（子役除外）、2027年8月から翌年4月頃まで稽古および公演可能なこと",
-    "deadline": "2026-04-01",
-    "url": "https://www.tohostage.com/lesmiserables/audition2027"
+    "conditions": "プロフィール、顔写真・全身写真各1枚をA4用紙2枚以内にまとめて郵送。",
+    "deadline": "2024-07-22",
+    "url": "https://www.tohostage.com/lesmiserables/audition2024_child"
   },
   "horipro": [
     {
-      "title": "第48回ホリプロタレントスカウトキャラバン – THE ACTOR",
+      "title": "第48回ホリプロタレントスカウトキャラバン - THE ACTOR",
       "public_date": "NA",
       "conditions": "中学1年生～20歳の男女",
       "deadline": "2026-08-02",
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
+      "title": "舞台『ハリー・ポッターと呪いの子』主要キャストオーディション",
       "public_date": "NA",
-      "conditions": "不明",
+      "conditions": "詳細は公式サイトを参照",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "舞台『ハリー・ポッターと呪いの子』主要キャスト オーディション",
+      "title": "ミュージカル次世代スターオーディション",
       "public_date": "NA",
-      "conditions": "不明",
+      "conditions": "詳細は公式サイトを参照",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
