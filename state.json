@@ -2,16 +2,16 @@
   "shiki": {
     "title": "劇団四季オーディション",
     "public_date": "NA",
-    "conditions": "演技・歌唱・ダンスの実技試験",
-    "deadline": "2026-06-13",
+    "conditions": "詳細は公式サイトで確認",
+    "deadline": "2023-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "レ・ミゼラブル 子役オーディション",
+    "title": "ミュージカル「レ・ミゼラブル」全国公演オーディション",
     "public_date": "NA",
-    "conditions": "男子（ガブローシュ）：130～135cm、女子（リトル・コゼット/リトル・エポニーヌ）：120cm前後、いずれも2024年10月下旬からの稽古参加および12月～翌年6月の全国公演に出演可能なこと",
-    "deadline": "2024-07-22",
-    "url": "https://www.tohostage.com/lesmiserables/audition2024_child"
+    "conditions": "歌唱に秀でた男女。ただし、子役を除く（子役オーディションは別途実施）。2024年10月〜翌25年6月頃までの稽古および公演に参加可能であること。",
+    "deadline": "2023-02-10",
+    "url": "https://www.tohostage.com/lesmiserables/audition2024-25"
   },
   "horipro": [
     {
@@ -22,16 +22,16 @@
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "J.K. Rowling's 舞台『ハリー・ポッターと呪いの子』主要キャスト オーディション",
+      "title": "J.K. Rowling's 舞台『ハリー・ポッターと呪いの子』主要キャストオーディション",
       "public_date": "NA",
-      "conditions": "詳細は公式サイトを確認",
+      "conditions": "詳細不明",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "「ビリー・エリオット～リトル・ダンサー～」主役オーディション",
+      "title": "ミュージカル次世代スターオーディション",
       "public_date": "NA",
-      "conditions": "詳細は公式サイトを確認",
+      "conditions": "詳細不明",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
