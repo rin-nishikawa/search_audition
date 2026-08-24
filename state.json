@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "劇団四季オーディション",
+    "title": "四季劇場オーディション",
     "public_date": "NA",
-    "conditions": "詳細は公式サイトで確認",
+    "conditions": "2026年四季劇場オーディション",
     "deadline": "2023-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "ミュージカル「レ・ミゼラブル」全国公演オーディション",
+    "title": "ミュージカル『スパイファミリー』アーニャ役オーディション",
     "public_date": "NA",
-    "conditions": "歌唱に秀でた男女。ただし、子役を除く（子役オーディションは別途実施）。2024年10月〜翌25年6月頃までの稽古および公演に参加可能であること。",
-    "deadline": "2023-02-10",
-    "url": "https://www.tohostage.com/lesmiserables/audition2024-25"
+    "conditions": "アーニャ役の大規模オーディションを実施",
+    "deadline": null,
+    "url": "https://www.tohostage.com/spy-family"
   },
   "horipro": [
     {
@@ -22,16 +22,16 @@
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "J.K. Rowling's 舞台『ハリー・ポッターと呪いの子』主要キャストオーディション",
+      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
       "public_date": "NA",
-      "conditions": "詳細不明",
+      "conditions": "条件不明",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "ミュージカル次世代スターオーディション",
+      "title": "第47回ホリプロタレントスカウトキャラバン「Horipro Vocal Scout Caravan」",
       "public_date": "NA",
-      "conditions": "詳細不明",
+      "conditions": "条件不明",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
