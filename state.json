@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "四季劇場オーディション",
-    "public_date": "NA",
-    "conditions": "2026年四季劇場オーディション",
-    "deadline": "2023-06-13",
+    "title": "ã¼ãã¼ãã&#39;ã¥ã¦ãã¥ã",
+    "public_date": "2026-01-01",
+    "conditions": "詳細は公式サイトを参照",
+    "deadline": "2026-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "ミュージカル『スパイファミリー』アーニャ役オーディション",
+    "title": "オーディション情報",
     "public_date": "NA",
-    "conditions": "アーニャ役の大規模オーディションを実施",
+    "conditions": "『レ・ミゼラブル』のオーディションが行われます。",
     "deadline": null,
-    "url": "https://www.tohostage.com/spy-family"
+    "url": "https://www.tohostage.com/lesmiserables/report20181010.html"
   },
   "horipro": [
     {
@@ -24,14 +24,14 @@
     {
       "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
       "public_date": "NA",
-      "conditions": "条件不明",
+      "conditions": "詳細不明",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
       "title": "第47回ホリプロタレントスカウトキャラバン「Horipro Vocal Scout Caravan」",
       "public_date": "NA",
-      "conditions": "条件不明",
+      "conditions": "詳細不明",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
