@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "ã¼ãã¼ãã&#39;ã¥ã¦ãã¥ã",
-    "public_date": "2026-01-01",
-    "conditions": "詳細は公式サイトを参照",
-    "deadline": "2026-06-13",
+    "title": "オーディション情報 2026年度アフタースクール",
+    "public_date": "NA",
+    "conditions": "エンターテイメント業界に興味がある方。どなたでも応募可。",
+    "deadline": "2023-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "オーディション情報",
+    "title": "AuditionInfo",
     "public_date": "NA",
-    "conditions": "『レ・ミゼラブル』のオーディションが行われます。",
+    "conditions": "ミュージカル『レ・ミゼラブル』のキャストオーディション",
     "deadline": null,
-    "url": "https://www.tohostage.com/lesmiserables/report20181010.html"
+    "url": "https://www.tohostage.com/lesmiserables/cast.html"
   },
   "horipro": [
     {
@@ -22,16 +22,16 @@
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
+      "title": "主要キャストオーディション J.K. Rowling’s 舞台『ハリー・ポッターと呪いの子』",
       "public_date": "NA",
-      "conditions": "詳細不明",
+      "conditions": "詳細は公式サイトを参照",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "第47回ホリプロタレントスカウトキャラバン「Horipro Vocal Scout Caravan」",
+      "title": "ホリプロメンズスターオーディション",
       "public_date": "NA",
-      "conditions": "詳細不明",
+      "conditions": "未来のスターはキミ？それとも隣のカレ？",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
