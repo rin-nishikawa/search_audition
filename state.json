@@ -1,16 +1,16 @@
 {
   "shiki": {
-    "title": "劇団四季オーディション",
+    "title": "オーディション - 2026年春 オーディション",
     "public_date": "NA",
-    "conditions": "詳細は公式ウェブサイトをご覧ください。",
+    "conditions": "日本国内に在住の方。",
     "deadline": "2023-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "レ・ミゼラブル 40周年記念公演 オーディション",
+    "title": "ミュージカル「レ・ミゼラブル」オールキャスト・オーディション",
     "public_date": "NA",
-    "conditions": "歌唱に秀でた男女。但し、子役を除く（子役オーディションは別途実施）。2027年8月～翌28年4月頃までの稽古および公演に参加可能であること。",
-    "deadline": "2026-04-30",
+    "conditions": "歌唱に秀でた男女。ただし、子役を除く。2027年8月～翌28年4月までの稽古および公演に参加可能であること。",
+    "deadline": "2026-04-10",
     "url": "https://www.tohostage.com/lesmiserables/audition2027"
   },
   "horipro": [
@@ -22,16 +22,16 @@
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
+      "title": "HORIPRO MEN’S STAR AUDITION",
       "public_date": "NA",
-      "conditions": "不明",
+      "conditions": "未来のスターはキミ？ それとも隣のカレ？",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     },
     {
-      "title": "第47回ホリプロタレントスカウトキャラバン「Horipro Vocal Scout Caravan」",
+      "title": "舞台『アクタージュ act-age ～銀河鉄道の夜～』ヒロイン「夜凪景」役オーディション",
       "public_date": "NA",
-      "conditions": "不明",
+      "conditions": "条件詳細未記載",
       "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
