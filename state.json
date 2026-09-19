@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "オーディション - 2026年春 オーディション",
+    "title": "四季劇場新規オーディション",
     "public_date": "NA",
-    "conditions": "日本国内に在住の方。",
+    "conditions": "詳細は公式サイトをご確認ください。",
     "deadline": "2023-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "ミュージカル「レ・ミゼラブル」オールキャスト・オーディション",
+    "title": "レ・ミゼラブル 子役オーディション",
     "public_date": "NA",
-    "conditions": "歌唱に秀でた男女。ただし、子役を除く。2027年8月～翌28年4月までの稽古および公演に参加可能であること。",
-    "deadline": "2026-04-10",
-    "url": "https://www.tohostage.com/lesmiserables/audition2027"
+    "conditions": "男子に限る（女子の応募は不可）。身長130～135cm程度、身長120cm前後の女子（リトル・コゼット／リトル・エポニーヌ役を交替で演じます）。",
+    "deadline": "2024-07-22",
+    "url": "https://www.tohostage.com/lesmiserables/audition2024_child"
   },
   "horipro": [
     {
@@ -19,20 +19,6 @@
       "public_date": "NA",
       "conditions": "中学1年生～20歳の男女",
       "deadline": "2026-08-02",
-      "url": "https://www.horipro.co.jp/audition/"
-    },
-    {
-      "title": "HORIPRO MEN’S STAR AUDITION",
-      "public_date": "NA",
-      "conditions": "未来のスターはキミ？ それとも隣のカレ？",
-      "deadline": null,
-      "url": "https://www.horipro.co.jp/audition/"
-    },
-    {
-      "title": "舞台『アクタージュ act-age ～銀河鉄道の夜～』ヒロイン「夜凪景」役オーディション",
-      "public_date": "NA",
-      "conditions": "条件詳細未記載",
-      "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
   ]
