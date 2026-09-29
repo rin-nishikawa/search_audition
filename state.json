@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "劇団四季 新人俳優オーディション",
+    "title": "オーディション情報",
     "public_date": "NA",
-    "conditions": "詳細は公式サイトを確認してください。",
+    "conditions": "739人以上の新たな才能を発掘し、オーディションを通じて多様な表現を追求します。",
     "deadline": "2026-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "東宝のオーディション情報",
+    "title": "ミュージカル「レ・ミゼラブル」オーディション",
     "public_date": "NA",
-    "conditions": "不明",
-    "deadline": null,
-    "url": "https://www.saiyo-info.net/toho"
+    "conditions": "歌唱に秀でた男女（子役を除く）で、2024年10月〜2025年6月頃までの稽古および公演に参加可能なこと。",
+    "deadline": "2023-02-10",
+    "url": "https://www.tohostage.com/lesmiserables/audition2024-25"
   },
   "horipro": [
     {
@@ -19,20 +19,6 @@
       "public_date": "NA",
       "conditions": "中学1年生～20歳の男女",
       "deadline": "2026-08-02",
-      "url": "https://www.horipro.co.jp/audition/"
-    },
-    {
-      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
-      "public_date": "NA",
-      "conditions": "不明",
-      "deadline": null,
-      "url": "https://www.horipro.co.jp/audition/"
-    },
-    {
-      "title": "第47回ホリプロタレントスカウトキャラバン「Horipro Vocal Scout Caravan」",
-      "public_date": "NA",
-      "conditions": "不明",
-      "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
   ]
