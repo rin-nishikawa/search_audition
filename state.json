@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "オーディション情報",
+    "title": "東京都劇団オーディション",
     "public_date": "NA",
-    "conditions": "739人以上の新たな才能を発掘し、オーディションを通じて多様な表現を追求します。",
+    "conditions": "ヨーロッパではあまり舞台経験がないが、オーディションを期待されるレベルの方を求む。",
     "deadline": "2026-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "ミュージカル「レ・ミゼラブル」オーディション",
+    "title": "レ・ミゼラブル 2024年子役オーディション",
     "public_date": "NA",
-    "conditions": "歌唱に秀でた男女（子役を除く）で、2024年10月〜2025年6月頃までの稽古および公演に参加可能なこと。",
-    "deadline": "2023-02-10",
-    "url": "https://www.tohostage.com/lesmiserables/audition2024-25"
+    "conditions": "男子130～135cm (ガブローシュ) または女子120cm前後 (リトル・コゼット/リトル・エポニーヌ)",
+    "deadline": "2024-07-22",
+    "url": "https://www.tohostage.com/lesmiserables/audition2024_child"
   },
   "horipro": [
     {
@@ -19,6 +19,20 @@
       "public_date": "NA",
       "conditions": "中学1年生～20歳の男女",
       "deadline": "2026-08-02",
+      "url": "https://www.horipro.co.jp/audition/"
+    },
+    {
+      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
+      "public_date": "NA",
+      "conditions": "不明",
+      "deadline": null,
+      "url": "https://www.horipro.co.jp/audition/"
+    },
+    {
+      "title": "第47回ホリプロタレントスカウトキャラバン「Horipro Vocal Scout Caravan」",
+      "public_date": "NA",
+      "conditions": "不明",
+      "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
   ]
