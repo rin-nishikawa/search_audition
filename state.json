@@ -1,15 +1,15 @@
 {
   "shiki": {
-    "title": "東京都劇団オーディション",
+    "title": "劇団四季オーディション",
     "public_date": "NA",
-    "conditions": "ヨーロッパではあまり舞台経験がないが、オーディションを期待されるレベルの方を求む。",
+    "conditions": "詳細は公式サイト参照",
     "deadline": "2026-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "レ・ミゼラブル 2024年子役オーディション",
+    "title": "オーディション情報",
     "public_date": "NA",
-    "conditions": "男子130～135cm (ガブローシュ) または女子120cm前後 (リトル・コゼット/リトル・エポニーヌ)",
+    "conditions": "男子に限る（女子の応募は不可）。身長130～135cm程度、または身長120cm前後の女子（コゼット役とエポニーヌ役を交替で演じます）。",
     "deadline": "2024-07-22",
     "url": "https://www.tohostage.com/lesmiserables/audition2024_child"
   },
@@ -19,20 +19,6 @@
       "public_date": "NA",
       "conditions": "中学1年生～20歳の男女",
       "deadline": "2026-08-02",
-      "url": "https://www.horipro.co.jp/audition/"
-    },
-    {
-      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
-      "public_date": "NA",
-      "conditions": "不明",
-      "deadline": null,
-      "url": "https://www.horipro.co.jp/audition/"
-    },
-    {
-      "title": "第47回ホリプロタレントスカウトキャラバン「Horipro Vocal Scout Caravan」",
-      "public_date": "NA",
-      "conditions": "不明",
-      "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
   ]
