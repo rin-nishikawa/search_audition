@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "劇団四季オーディション",
-    "public_date": "NA",
-    "conditions": "詳細は公式サイト参照",
-    "deadline": "2026-06-13",
+    "title": "葦プロダクション オーディション",
+    "public_date": "2026-07-01",
+    "conditions": "葦プロダクションに所属している方々を対象としたオーディションです。",
+    "deadline": "2023-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "オーディション情報",
+    "title": "ミュージカル「レ・ミゼラブル」オールキャスト・オーディション",
     "public_date": "NA",
-    "conditions": "男子に限る（女子の応募は不可）。身長130～135cm程度、または身長120cm前後の女子（コゼット役とエポニーヌ役を交替で演じます）。",
-    "deadline": "2024-07-22",
-    "url": "https://www.tohostage.com/lesmiserables/audition2024_child"
+    "conditions": "歌唱に秀でた男女。ただし、子役を除く。2027年8月～翌28年4月頃までの稽古および公演に参加可能であること。",
+    "deadline": "2026-04-10",
+    "url": "https://www.tohostage.com/lesmiserables/audition2027"
   },
   "horipro": [
     {
@@ -19,6 +19,20 @@
       "public_date": "NA",
       "conditions": "中学1年生～20歳の男女",
       "deadline": "2026-08-02",
+      "url": "https://www.horipro.co.jp/audition/"
+    },
+    {
+      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
+      "public_date": "NA",
+      "conditions": "詳細未確認",
+      "deadline": null,
+      "url": "https://www.horipro.co.jp/audition/"
+    },
+    {
+      "title": "J.K. Rowling's 舞台『ハリー・ポッターと呪いの子』主要キャスト オーディション",
+      "public_date": "NA",
+      "conditions": "詳細未確認",
+      "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
   ]
