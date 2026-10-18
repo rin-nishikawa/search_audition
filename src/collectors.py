@@ -43,7 +43,7 @@ def format_news(news_items: list[NewsItem]) -> list[str]:
     try:
         client = _openai_client()
         response = client.responses.parse(
-            model="gpt-4o-mini",
+            model="gpt-6-luna",
             input=[
                 {
                     "role": "system",
@@ -95,7 +95,7 @@ def _fetch_audition_from_html(url: str) -> AuditionInfo | None:
     try:
         client = _openai_client()
         response = client.responses.parse(
-            model="gpt-4o-mini",
+            model="gpt-6-luna",
             input=[
                 {
                     "role": "system",
@@ -138,7 +138,7 @@ def fetch_horipro() -> list[AuditionInfo]:
     try:
         client = _openai_client()
         response = client.responses.parse(
-            model="gpt-4o-mini",
+            model="gpt-6-luna",
             input=[
                 {
                     "role": "system",
@@ -180,7 +180,7 @@ def fetch_toho() -> AuditionInfo | None:
     try:
         client = _openai_client()
         response = client.responses.parse(
-            model="gpt-4o-mini",
+            model="gpt-6-luna",
             input=[
                 {
                     "role": "system",
