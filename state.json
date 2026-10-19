@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "葦プロダクション オーディション",
-    "public_date": "2026-07-01",
-    "conditions": "葦プロダクションに所属している方々を対象としたオーディションです。",
-    "deadline": "2023-06-13",
+    "title": "劇団四季 2026年オーディション",
+    "public_date": "NA",
+    "conditions": "劇団メンバー・研究生の募集。性別・国籍・経験不問。2027年4月1日時点で18歳以上（研究生は18～25歳で同日から入所可能な方）。応募受付は終了しています。",
+    "deadline": "2026-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "ミュージカル「レ・ミゼラブル」オールキャスト・オーディション",
-    "public_date": "NA",
-    "conditions": "歌唱に秀でた男女。ただし、子役を除く。2027年8月～翌28年4月頃までの稽古および公演に参加可能であること。",
-    "deadline": "2026-04-10",
-    "url": "https://www.tohostage.com/lesmiserables/audition2027"
+    "title": "ミュージカル『SPY×FAMILY 2』アーニャ役オーディション",
+    "public_date": "2026年（全国公演）",
+    "conditions": "2026年全国公演のアーニャ役オーディション。応募条件・応募方法の詳細は検索結果に記載なし。",
+    "deadline": null,
+    "url": "https://www.tohostage.com/spy-family2/audition.html"
   },
   "horipro": [
     {
@@ -19,20 +19,6 @@
       "public_date": "NA",
       "conditions": "中学1年生～20歳の男女",
       "deadline": "2026-08-02",
-      "url": "https://www.horipro.co.jp/audition/"
-    },
-    {
-      "title": "ホリプロ×週刊プレイボーイ ニューヒロイン PROJECT",
-      "public_date": "NA",
-      "conditions": "詳細未確認",
-      "deadline": null,
-      "url": "https://www.horipro.co.jp/audition/"
-    },
-    {
-      "title": "J.K. Rowling's 舞台『ハリー・ポッターと呪いの子』主要キャスト オーディション",
-      "public_date": "NA",
-      "conditions": "詳細未確認",
-      "deadline": null,
       "url": "https://www.horipro.co.jp/audition/"
     }
   ]
