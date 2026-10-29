@@ -1,17 +1,17 @@
 {
   "shiki": {
-    "title": "緊急システムメンテナンスのお知らせ",
+    "title": "劇団四季 2026年オーディション（劇団メンバー・研究生）",
     "public_date": "NA",
-    "conditions": "掲載内容はシステムメンテナンスのお知らせで、オーディション情報は確認できません。",
-    "deadline": null,
+    "conditions": "2027年4月1日時点で18歳以上。性別・国籍・経験不問。募集コースはヴォーカルクラシック、ヴォーカルポピュラー、ジャズダンス、クラシックバレエ、演技。応募受付は終了しています。",
+    "deadline": "2026-06-13",
     "url": "https://www.shiki.jp/group/audition/"
   },
   "toho": {
-    "title": "ミュージカル『レ・ミゼラブル』2027年公演 オーディション",
-    "public_date": "2027年8月〜2028年4月頃",
-    "conditions": "全ての役柄を募集。稽古開始時に義務教育課程にある方は審査対象外（子役を除く）。希望役は応募時に記入し、年齢・キャラクター・音域によって変更となる場合があります。",
+    "title": "ミュージカル『レ・ミゼラブル』2027〜28年全国公演 オールキャスト・オーディション",
+    "public_date": "2027年8月〜2028年4月頃（稽古・公演予定）",
+    "conditions": "歌唱に秀でた男女（子役を除く）。2027年8月〜2028年4月頃までの稽古および東京を含む全国公演に参加可能な方。Web応募。",
     "deadline": null,
-    "url": "https://www.tohostage.com/lesmiserables/audition2027/faq.html"
+    "url": "https://www.tohostage.com/lesmiserables/audition2027"
   },
   "horipro": [
     {
